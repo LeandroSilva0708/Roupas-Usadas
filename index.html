@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moda Circular | Roupas Seminovas e Usadas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>Moda Circular</h1>
+                    </a>
+                </div>
+                
+                <div class="search-bar">
+                    <form action="#" method="get">
+                        <input type="text" placeholder="Buscar produtos...">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <a href="https://wa.me/5511999999999" class="whatsapp-link">
+                        <i class="fab fa-whatsapp"></i> Contato
+                    </a>
+                </div>
+                
+                <button class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Navegação -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="#" class="active">Início</a></li>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="#categories">Categorias</a></li>
+                <li><a href="#about">Como Funciona</a></li>
+                <li><a href="#testimonials">Depoimentos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Banner Principal -->
+    <section class="hero-banner">
+        <div class="container">
+            <div class="banner-content">
+                <h2>Moda Sustentável ao seu Alcance</h2>
+                <p>Roupas seminovas e usadas com qualidade e preços acessíveis</p>
+                <a href="#products" class="btn btn-primary">Ver Produtos</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Categorias -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2 class="section-title">Categorias</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="images/category-women.jpg" alt="Moda Feminina">
+                    </div>
+                    <h3>Feminino</h3>
+                    <a href="#" class="category-link">Ver Produtos</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="images/category-men.jpg" alt="Moda Masculina">
+                    </div>
+                    <h3>Masculino</h3>
+                    <a href="#" class="category-link">Ver Produtos</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="images/category-kids.jpg" alt="Moda Infantil">
+                    </div>
+                    <h3>Infantil</h3>
+                    <a href="#" class="category-link">Ver Produtos</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="images/category-accessories.jpg" alt="Acessórios">
+                    </div>
+                    <h3>Acessórios</h3>
+                    <a href="#" class="category-link">Ver Produtos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Produtos em Destaque -->
+    <section class="featured-products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Produtos em Destaque</h2>
+                <div class="filter-options">
+                    <select id="category-filter">
+                        <option value="all">Todas Categorias</option>
+                        <option value="women">Feminino</option>
+                        <option value="men">Masculino</option>
+                        <option value="kids">Infantil</option>
+                        <option value="accessories">Acessórios</option>
+                    </select>
+                    <select id="condition-filter">
+                        <option value="all">Todas Condições</option>
+                        <option value="like-new">Como Novo</option>
+                        <option value="very-good">Muito Bom</option>
+                        <option value="good">Bom</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="products-grid" id="products-grid">
+                <!-- Produtos serão adicionados dinamicamente via JavaScript -->
+            </div>
+            
+            <div class="load-more">
+                <button class="btn btn-secondary" id="load-more-btn">Carregar Mais</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Como Funciona -->
+    <section class="how-it-works" id="about">
+        <div class="container">
+            <h2 class="section-title">Como Funciona</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Escolha o Produto</h3>
+                    <p>Navegue pelo nosso catálogo e encontre peças que combinam com seu estilo.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3>Envie o Link</h3>
+                    <p>Clique em "Compartilhar" e envie o link do produto desejado pelo WhatsApp.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Confirme Detalhes</h3>
+                    <p>Conversaremos sobre disponibilidade, forma de entrega e pagamento.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Receba sua Peça</h3>
+                    <p>Após a confirmação, enviaremos sua peça com todo cuidado e carinho.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Depoimentos -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">O que nossos clientes dizem</h2>
+            <div class="testimonials-slider" id="testimonials-slider">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Encontrei peças incríveis por preços que cabem no meu orçamento. A qualidade é surpreendente!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-img">
+                            <img src="images/testimonial-1.jpg" alt="Cliente">
+                        </div>
+                        <div class="author-info">
+                            <h4>Ana Silva</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Comprei um blazer seminovo que parecia nunca ter sido usado. Atendimento excelente e entrega rápida!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-img">
+                            <img src="images/testimonial-2.jpg" alt="Cliente">
+                        </div>
+                        <div class="author-info">
+                            <h4>Carlos Oliveira</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Adoro a proposta sustentável e a variedade de peças. Já indiquei para todas as minhas amigas!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-img">
+                            <img src="images/testimonial-3.jpg" alt="Cliente">
+                        </div>
+                        <div class="author-info">
+                            <h4>Mariana Costa</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="prev-btn" id="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-btn" id="next-testimonial"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contato -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info-block">
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>WhatsApp</h3>
+                            <p>(11) 99999-9999</p>
+                            <a href="https://wa.me/5511999999999" class="btn btn-outline">Enviar Mensagem</a>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>E-mail</h3>
+                            <p>contato@modacircular.com.br</p>
+                            <a href="mailto:contato@modacircular.com.br" class="btn btn-outline">Enviar E-mail</a>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Endereço</h3>
+                            <p>Rua das Flores, 123 - São Paulo</p>
+                            <p>Seg-Sex: 9h às 18h</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-media-block">
+                    <h3>Siga-nos nas Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Receba Novidades e Ofertas Exclusivas</h2>
+                <p>Cadastre-se para receber em primeira mão as novidades e promoções especiais.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Seu melhor e-mail" required>
+                    <button type="submit" class="btn btn-primary">Inscrever-se</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <h2>Moda Circular</h2>
+                    </div>
+                    <p>Moda sustentável e acessível para todos. Dê uma segunda vida às roupas e contribua para um planeta mais saudável.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#products">Produtos</a></li>
+                        <li><a href="#categories">Categorias</a></li>
+                        <li><a href="#about">Como Funciona</a></li>
+                        <li><a href="#testimonials">Depoimentos</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Categorias</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Feminino</a></li>
+                        <li><a href="#">Masculino</a></li>
+                        <li><a href="#">Infantil</a></li>
+                        <li><a href="#">Acessórios</a></li>
+                        <li><a href="#">Calçados</a></li>
+                        <li><a href="#">Promoções</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Atendimento</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Rua das Flores, 123 - São Paulo</li>
+                        <li><i class="fas fa-phone"></i> (11) 99999-9999</li>
+                        <li><i class="fas fa-envelope"></i> contato@modacircular.com.br</li>
+                        <li><i class="fas fa-clock"></i> Seg-Sex: 9h às 18h</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 Moda Circular. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Modal de Produto -->
+    <div class="product-modal" id="product-modal">
+        <div class="modal-content">
+            <button class="close-modal" id="close-modal"><i class="fas fa-times"></i></button>
+            <div class="modal-body" id="modal-body">
+                <!-- Conteúdo do modal será adicionado dinamicamente via JavaScript -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+    
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
